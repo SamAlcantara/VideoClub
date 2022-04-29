@@ -24,8 +24,8 @@ _- Un Reporte de rentas: entre fechas, por tipo de articulo, etc._
 
 _- Desarrollado en la tecnología de su preferencia._
 
-## Construccion 🚀
-_Estructura actual de MySQL_
+## Construccion 🎥
+_Estructura actual de SQLSERVER_
 
 ![image](https://user-images.githubusercontent.com/86896794/160165760-834c09b4-5ae5-4176-bb66-66b81b64f49f.png)
 
