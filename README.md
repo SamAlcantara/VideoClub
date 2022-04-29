@@ -43,8 +43,8 @@ _Inicio_
 
 ![Captura de pantalla 2022-04-29 183647](https://user-images.githubusercontent.com/98991500/166077160-70f21d76-4927-438b-8a88-5d7f7cc0003e.jpg)
 
+Gestion Video Club
 
-Si los datos son correctos pasa al siguiente form
 
 _Opciones_
 
