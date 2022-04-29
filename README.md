@@ -37,59 +37,59 @@ __
 
 
 ## Ejecutando las pruebas ⚙️
-_Inicio_
+### _Inicio_
 
 ![menu](https://user-images.githubusercontent.com/98991500/166076877-6b61a9cd-c9aa-41ef-94ed-55d477355bb0.jpg)
 
-### Gestión de articulos
+### _Gestión de articulos_ 💿
 
 ![Lista](https://user-images.githubusercontent.com/98991500/166077782-11cb0eb8-1b2a-4452-8489-dc52a316f82b.jpg)
 
 ![create](https://user-images.githubusercontent.com/98991500/166077808-a2460985-16e9-4758-97ea-c83df9fc23a4.jpg)
 
-_Gestión de clientes_
+### _Gestión de clientes_ 👨‍👩‍👦‍👦
 
 ![gclie](https://user-images.githubusercontent.com/98991500/166079205-0b89aa25-99fa-48fd-b196-dfa1fedee9a2.jpg)
 
 ![crecliente](https://user-images.githubusercontent.com/98991500/166079252-f72b5c5f-82fe-43dc-b1a7-61757aff4e2a.jpg)
 
-_Gestión de elenco_
+### _Gestión de elenco_ 👤
 
 ![gele](https://user-images.githubusercontent.com/98991500/166079292-b3595132-317e-4992-b2bf-77f554b185fe.jpg)
 
 ![crearelenco](https://user-images.githubusercontent.com/98991500/166079311-ab14c172-3c40-44de-a47c-be4af71d7331.jpg)
 
-_Gestión de elenco - artículo_
+### _Gestión de elenco - artículo_ 👥
 
 ![geleart](https://user-images.githubusercontent.com/98991500/166079786-b20ae95f-d1e7-4c04-b028-6b82200e9735.jpg)
 
 ![crear ele art](https://user-images.githubusercontent.com/98991500/166079799-78893142-68dd-4ef9-9b41-b74c5f89d906.jpg)
 
-_Gestión empleados_
+### _Gestión empleados_ 🧑‍💼
 
 ![Lista](https://user-images.githubusercontent.com/98991500/166077782-11cb0eb8-1b2a-4452-8489-dc52a316f82b.jpg)
 
 ![create](https://user-images.githubusercontent.com/98991500/166077808-a2460985-16e9-4758-97ea-c83df9fc23a4.jpg)
 
-_Gestión de generos_
+### _Gestión de generos_ 🎭
 
 ![Lista](https://user-images.githubusercontent.com/98991500/166077782-11cb0eb8-1b2a-4452-8489-dc52a316f82b.jpg)
 
 ![create](https://user-images.githubusercontent.com/98991500/166077808-a2460985-16e9-4758-97ea-c83df9fc23a4.jpg)
 
-_Gestión de idomas_
+### _Gestión de idomas_ 🌐
 
 ![Lista](https://user-images.githubusercontent.com/98991500/166077782-11cb0eb8-1b2a-4452-8489-dc52a316f82b.jpg)
 
 ![create](https://user-images.githubusercontent.com/98991500/166077808-a2460985-16e9-4758-97ea-c83df9fc23a4.jpg)
 
-_Gestión de Renta_
+### _Gestión de Renta_ 💸
 
 ![Lista](https://user-images.githubusercontent.com/98991500/166077782-11cb0eb8-1b2a-4452-8489-dc52a316f82b.jpg)
 
 ![create](https://user-images.githubusercontent.com/98991500/166077808-a2460985-16e9-4758-97ea-c83df9fc23a4.jpg)
 
-_Gestión de tipo - articulos_
+### _Gestión de tipo - articulos_ 📹
 
 ![Lista](https://user-images.githubusercontent.com/98991500/166077782-11cb0eb8-1b2a-4452-8489-dc52a316f82b.jpg)
 
