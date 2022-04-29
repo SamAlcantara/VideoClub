@@ -1,4 +1,4 @@
-#  Sistema de Video Club 🎥
+#  Sistema web de Video Club 🎞
 
 _Desarrolle un Sistema de Video Club que cumpla con las siguientes caracteristicas:_
 
