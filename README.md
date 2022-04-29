@@ -37,9 +37,11 @@ __
 
 
 ## Ejecutando las pruebas ⚙️
-_Login_
+_Inicio_
 
-![image](https://user-images.githubusercontent.com/86896794/160165979-19effc55-375e-440d-ae94-a30d25c7e9e2.png)
+![menu](https://user-images.githubusercontent.com/98991500/166076877-6b61a9cd-c9aa-41ef-94ed-55d477355bb0.jpg)
+
+![menu2](https://user-images.githubusercontent.com/98991500/166076955-f7092ade-03dd-47a5-8e96-20697d4e3ae0.jpg)
 
 Si los datos son correctos pasa al siguiente form
 
