@@ -47,14 +47,15 @@ __
 
 ![create](https://user-images.githubusercontent.com/98991500/166077808-a2460985-16e9-4758-97ea-c83df9fc23a4.jpg)
 
+__
+
 ### Gestión de clientes 👨‍👩‍👦‍👦
 
 ![gclie](https://user-images.githubusercontent.com/98991500/166079205-0b89aa25-99fa-48fd-b196-dfa1fedee9a2.jpg)
 
-__
-
-
 ![Captura de pantalla 2022-04-29 194827](https://user-images.githubusercontent.com/98991500/166081517-bfc42d3d-cd63-4dc3-bfe6-c2d399d0d6ce.jpg)
+
+__
 
 ### Gestión de elenco 👤
 
@@ -62,11 +63,15 @@ __
 
 ![crearelenco](https://user-images.githubusercontent.com/98991500/166079311-ab14c172-3c40-44de-a47c-be4af71d7331.jpg)
 
+__
+
 ### Gestión de elenco - artículo 👥
 
 ![geleart](https://user-images.githubusercontent.com/98991500/166079786-b20ae95f-d1e7-4c04-b028-6b82200e9735.jpg)
 
 ![elenco2222222](https://user-images.githubusercontent.com/98991500/166081157-996a5024-b81c-4df4-beb6-4e197b391e68.jpg)
+
+__
 
 ### Gestión empleados 🧑‍💼
 
@@ -74,11 +79,15 @@ __
 
 ![empleados2](https://user-images.githubusercontent.com/98991500/166081179-8d2f5d56-65fd-4c54-896d-ced72cab9797.jpg)
 
+__
+
 ### Gestión de generos 🎭
 
 ![generos](https://user-images.githubusercontent.com/98991500/166081187-7e35636b-bd5f-4bd3-964a-33b2d9d960dc.jpg)
 
 ![generos2](https://user-images.githubusercontent.com/98991500/166081201-ea415225-1fc2-4e95-81ca-f955c44e9149.jpg)
+
+__
 
 ### Gestión de idomas 🌐
 
@@ -86,17 +95,22 @@ __
 
 ![idiomas2](https://user-images.githubusercontent.com/98991500/166081226-c9298c7b-c349-46b6-a4ce-88439100a14d.jpg)
 
+__
+
 ### Gestión de Renta 💸
 
 ![renta](https://user-images.githubusercontent.com/98991500/166081292-829f2b53-b544-4e71-ae9d-2c46e756cc8a.jpg)
 
 ![rentaa](https://user-images.githubusercontent.com/98991500/166081297-37f5d93c-d292-4033-93b7-a61cbabe3497.jpg)
 
+__
+
 ### Gestión de tipo - articulos 📹
 
 ![gestion 1](https://user-images.githubusercontent.com/98991500/166081334-1c5e8c71-d92f-4642-b4d1-4beb131c9ad1.jpg)
 
 ![gestion 2](https://user-images.githubusercontent.com/98991500/166081326-184d83f0-2a22-482b-9a19-0d2842391aa2.jpg)
+
 __
 
 ## Construido con 🛠️
