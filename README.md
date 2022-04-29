@@ -59,11 +59,11 @@ _Gestión de elenco_
 
 ![crearelenco](https://user-images.githubusercontent.com/98991500/166079311-ab14c172-3c40-44de-a47c-be4af71d7331.jpg)
 
-_Gestión de elenco - artículo
+_Gestión de elenco - artículo_
 
-![Lista](https://user-images.githubusercontent.com/98991500/166077782-11cb0eb8-1b2a-4452-8489-dc52a316f82b.jpg)
+![geleart](https://user-images.githubusercontent.com/98991500/166079786-b20ae95f-d1e7-4c04-b028-6b82200e9735.jpg)
 
-![create](https://user-images.githubusercontent.com/98991500/166077808-a2460985-16e9-4758-97ea-c83df9fc23a4.jpg)
+![crear ele art](https://user-images.githubusercontent.com/98991500/166079799-78893142-68dd-4ef9-9b41-b74c5f89d906.jpg)
 
 _Gestión empleados_
 
