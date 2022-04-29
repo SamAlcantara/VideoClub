@@ -63,47 +63,37 @@ __
 
 ![geleart](https://user-images.githubusercontent.com/98991500/166079786-b20ae95f-d1e7-4c04-b028-6b82200e9735.jpg)
 
-![crear ele art](https://user-images.githubusercontent.com/98991500/166079799-78893142-68dd-4ef9-9b41-b74c5f89d906.jpg)
+![elenco2222222](https://user-images.githubusercontent.com/98991500/166081157-996a5024-b81c-4df4-beb6-4e197b391e68.jpg)
 
 ### Gestión empleados 🧑‍💼
 
-![Lista](https://user-images.githubusercontent.com/98991500/166077782-11cb0eb8-1b2a-4452-8489-dc52a316f82b.jpg)
+![empleadps](https://user-images.githubusercontent.com/98991500/166081173-31837f01-9358-403e-9259-55d9332cb2fa.jpg)
 
-![create](https://user-images.githubusercontent.com/98991500/166077808-a2460985-16e9-4758-97ea-c83df9fc23a4.jpg)
+![empleados2](https://user-images.githubusercontent.com/98991500/166081179-8d2f5d56-65fd-4c54-896d-ced72cab9797.jpg)
 
 ### Gestión de generos 🎭
 
-![Lista](https://user-images.githubusercontent.com/98991500/166077782-11cb0eb8-1b2a-4452-8489-dc52a316f82b.jpg)
+![generos](https://user-images.githubusercontent.com/98991500/166081187-7e35636b-bd5f-4bd3-964a-33b2d9d960dc.jpg)
 
-![create](https://user-images.githubusercontent.com/98991500/166077808-a2460985-16e9-4758-97ea-c83df9fc23a4.jpg)
+![generos2](https://user-images.githubusercontent.com/98991500/166081201-ea415225-1fc2-4e95-81ca-f955c44e9149.jpg)
 
 ### Gestión de idomas 🌐
 
-![Lista](https://user-images.githubusercontent.com/98991500/166077782-11cb0eb8-1b2a-4452-8489-dc52a316f82b.jpg)
+![idiomas](https://user-images.githubusercontent.com/98991500/166081217-3d4eb40a-761d-4501-9cec-a77457bd4494.jpg)
 
-![create](https://user-images.githubusercontent.com/98991500/166077808-a2460985-16e9-4758-97ea-c83df9fc23a4.jpg)
+![idiomas2](https://user-images.githubusercontent.com/98991500/166081226-c9298c7b-c349-46b6-a4ce-88439100a14d.jpg)
 
 ### Gestión de Renta 💸
 
-![Lista](https://user-images.githubusercontent.com/98991500/166077782-11cb0eb8-1b2a-4452-8489-dc52a316f82b.jpg)
+![renta](https://user-images.githubusercontent.com/98991500/166081292-829f2b53-b544-4e71-ae9d-2c46e756cc8a.jpg)
 
-![create](https://user-images.githubusercontent.com/98991500/166077808-a2460985-16e9-4758-97ea-c83df9fc23a4.jpg)
+![rentaa](https://user-images.githubusercontent.com/98991500/166081297-37f5d93c-d292-4033-93b7-a61cbabe3497.jpg)
 
 ### Gestión de tipo - articulos 📹
 
-![Lista](https://user-images.githubusercontent.com/98991500/166077782-11cb0eb8-1b2a-4452-8489-dc52a316f82b.jpg)
+![gestion 1](https://user-images.githubusercontent.com/98991500/166081334-1c5e8c71-d92f-4642-b4d1-4beb131c9ad1.jpg)
 
-![create](https://user-images.githubusercontent.com/98991500/166077808-a2460985-16e9-4758-97ea-c83df9fc23a4.jpg)
-Mas tarde se agregaran opciones ejecutable a la barra de menu con todas las utilidades mencionadas, como:
-
-Registrar CLiente
-
-![image](https://user-images.githubusercontent.com/86896794/160166468-7b06fbf9-1e4c-41bf-98ac-4093f761eac6.png)
-
-_Registrar Empleado_
-
-![image](https://user-images.githubusercontent.com/86896794/160166403-fe6ed556-a81a-49ab-a91d-ff703f7b96df.png)
-
+![gestion 2](https://user-images.githubusercontent.com/98991500/166081326-184d83f0-2a22-482b-9a19-0d2842391aa2.jpg)
 __
 
 ## Construido con 🛠️
