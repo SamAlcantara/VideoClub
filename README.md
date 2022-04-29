@@ -45,10 +45,11 @@ _Inicio_
 
 Gestion Video Club
 
+_Gestión de articulos_
 
-_Opciones_
+![Lista](https://user-images.githubusercontent.com/98991500/166077782-11cb0eb8-1b2a-4452-8489-dc52a316f82b.jpg)
+![create](https://user-images.githubusercontent.com/98991500/166077808-a2460985-16e9-4758-97ea-c83df9fc23a4.jpg)
 
-![image](https://user-images.githubusercontent.com/86896794/160166192-b1ba6cfd-4723-4534-8af6-97f77069ad9f.png)
 
 Mas tarde se agregaran opciones ejecutable a la barra de menu con todas las utilidades mencionadas, como:
 
