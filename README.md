@@ -29,9 +29,9 @@ _Estructura de la base de datos (SQLSERVER)_
 
 ![db](https://user-images.githubusercontent.com/98991500/166076333-6f983ddf-e1a6-406e-a3fb-196f6c689e97.jpg)
 
-_Formato de carpetas_
+_Estructuras de carpetas_
 
-![image](https://user-images.githubusercontent.com/86896794/160165855-72609f70-2945-45e9-a605-a734816eba86.png)
+![carpetas](https://user-images.githubusercontent.com/98991500/166076579-ad3e691d-37cf-45d9-89aa-9cdc8df351b0.jpg)
 
 __
 
