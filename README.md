@@ -24,7 +24,7 @@ _- Un Reporte de rentas: entre fechas, por tipo de articulo, etc._
 
 _- Desarrollado en la tecnología de su preferencia._
 
-## Construccion 🎥
+## Construccion 🎥⚒
 _Estructura de la base de datos (SQLSERVER)_
 
 ![db](https://user-images.githubusercontent.com/98991500/166076333-6f983ddf-e1a6-406e-a3fb-196f6c689e97.jpg)
