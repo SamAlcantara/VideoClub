@@ -51,7 +51,10 @@ __
 
 ![gclie](https://user-images.githubusercontent.com/98991500/166079205-0b89aa25-99fa-48fd-b196-dfa1fedee9a2.jpg)
 
-![crecliente](https://user-images.githubusercontent.com/98991500/166079252-f72b5c5f-82fe-43dc-b1a7-61757aff4e2a.jpg)
+__
+
+
+![Captura de pantalla 2022-04-29 194827](https://user-images.githubusercontent.com/98991500/166081517-bfc42d3d-cd63-4dc3-bfe6-c2d399d0d6ce.jpg)
 
 ### Gestión de elenco 👤
 
