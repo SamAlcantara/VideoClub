@@ -1,0 +1,81 @@
+﻿@model IEnumerable<ProgII_VideoClub.Models.Renta_Devolucion>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Fecha_renta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fecha_devolucion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Renta_por_dia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dias_de_renta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Comentario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cliente1.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Empleado1.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Articulo1.Titulo)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fecha_renta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fecha_devolucion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Renta_por_dia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dias_de_renta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Comentario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Estado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cliente1.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Empleado1.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Articulo1.Titulo)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Num_de_renta }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Num_de_renta }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Num_de_renta })
+        </td>
+    </tr>
+}
+
+</table>

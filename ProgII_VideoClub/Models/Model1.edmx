@@ -1,0 +1,613 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="VideoClub_dbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Articulos">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Titulo" Type="varchar" MaxLength="500" />
+          <Property Name="Tipo_de_articulo_ID" Type="int" />
+          <Property Name="Idioma_ID" Type="int" />
+          <Property Name="Renta_por_dia" Type="float" />
+          <Property Name="Dias_de_renta" Type="varchar" MaxLength="40" />
+          <Property Name="Monto_entrega_tardia" Type="float" />
+          <Property Name="Estado" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Clientes">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="500" />
+          <Property Name="Cedula" Type="varchar" MaxLength="20" />
+          <Property Name="Num_tarjeta_CR" Type="int" />
+          <Property Name="Limite_de_credito" Type="float" />
+          <Property Name="Tipo_persona" Type="varchar" MaxLength="20" />
+          <Property Name="Estado" Type="varchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="Elenco">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="50" />
+          <Property Name="Estado" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="Elenco_articulo">
+          <Key>
+            <PropertyRef Name="Articulo" />
+          </Key>
+          <Property Name="Articulo" Type="int" Nullable="false" />
+          <Property Name="Elenco" Type="int" />
+          <Property Name="Rol" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Empleados">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="500" />
+          <Property Name="Cedula" Type="varchar" MaxLength="20" />
+          <Property Name="Tanda_labor" Type="varchar" MaxLength="40" />
+          <Property Name="Porciento_comision" Type="varchar" MaxLength="10" />
+          <Property Name="Fecha_ingreso" Type="datetime" />
+          <Property Name="Estado" Type="varchar" MaxLength="40" />
+        </EntityType>
+        <EntityType Name="Generos">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="Idiomas">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="Renta_Devolucion">
+          <Key>
+            <PropertyRef Name="Num_de_renta" />
+          </Key>
+          <Property Name="Num_de_renta" Type="int" Nullable="false" />
+          <Property Name="Empleado" Type="int" />
+          <Property Name="Articulo" Type="int" />
+          <Property Name="Cliente" Type="int" />
+          <Property Name="Fecha_renta" Type="datetime" />
+          <Property Name="Fecha_devolucion" Type="datetime" />
+          <Property Name="Renta_por_dia" Type="float" />
+          <Property Name="Dias_de_renta" Type="varchar" MaxLength="40" />
+          <Property Name="Comentario" Type="varchar" MaxLength="500" />
+          <Property Name="Estado" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="Tipo_de_artículo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="500" />
+          <Property Name="Estado" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <Association Name="FK__Renta_Dev__Artic__44FF419A">
+          <End Role="Articulos" Type="Self.Articulos" Multiplicity="0..1" />
+          <End Role="Renta_Devolucion" Type="Self.Renta_Devolucion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Articulos">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Renta_Devolucion">
+              <PropertyRef Name="Articulo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Renta_Dev__Clien__45F365D3">
+          <End Role="Clientes" Type="Self.Clientes" Multiplicity="0..1" />
+          <End Role="Renta_Devolucion" Type="Self.Renta_Devolucion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clientes">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Renta_Devolucion">
+              <PropertyRef Name="Cliente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Renta_Dev__Estad__440B1D61">
+          <End Role="Empleados" Type="Self.Empleados" Multiplicity="0..1" />
+          <End Role="Renta_Devolucion" Type="Self.Renta_Devolucion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Empleados">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Renta_Devolucion">
+              <PropertyRef Name="Empleado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Articulos_Idiomas">
+          <End Role="Idiomas" Type="Self.Idiomas" Multiplicity="0..1" />
+          <End Role="Articulos" Type="Self.Articulos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Idiomas">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Articulos">
+              <PropertyRef Name="Idioma_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Articulos_Tipo_de_artículo">
+          <End Role="Tipo_de_artículo" Type="Self.Tipo_de_artículo" Multiplicity="0..1" />
+          <End Role="Articulos" Type="Self.Articulos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tipo_de_artículo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Articulos">
+              <PropertyRef Name="Tipo_de_articulo_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Elenco_articulo_Articulos">
+          <End Role="Articulos" Type="Self.Articulos" Multiplicity="1" />
+          <End Role="Elenco_articulo" Type="Self.Elenco_articulo" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Articulos">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Elenco_articulo">
+              <PropertyRef Name="Articulo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Elenco_articulo_Elenco">
+          <End Role="Elenco" Type="Self.Elenco" Multiplicity="0..1" />
+          <End Role="Elenco_articulo" Type="Self.Elenco_articulo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Elenco">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Elenco_articulo">
+              <PropertyRef Name="Elenco" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="VideoClub_dbModelStoreContainer">
+          <EntitySet Name="Articulos" EntityType="Self.Articulos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Clientes" EntityType="Self.Clientes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Elenco" EntityType="Self.Elenco" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Elenco_articulo" EntityType="Self.Elenco_articulo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Empleados" EntityType="Self.Empleados" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Generos" EntityType="Self.Generos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Idiomas" EntityType="Self.Idiomas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Renta_Devolucion" EntityType="Self.Renta_Devolucion" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Tipo_de_artículo" EntityType="Self.Tipo_de_artículo" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Renta_Dev__Artic__44FF419A" Association="Self.FK__Renta_Dev__Artic__44FF419A">
+            <End Role="Articulos" EntitySet="Articulos" />
+            <End Role="Renta_Devolucion" EntitySet="Renta_Devolucion" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Renta_Dev__Clien__45F365D3" Association="Self.FK__Renta_Dev__Clien__45F365D3">
+            <End Role="Clientes" EntitySet="Clientes" />
+            <End Role="Renta_Devolucion" EntitySet="Renta_Devolucion" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Renta_Dev__Estad__440B1D61" Association="Self.FK__Renta_Dev__Estad__440B1D61">
+            <End Role="Empleados" EntitySet="Empleados" />
+            <End Role="Renta_Devolucion" EntitySet="Renta_Devolucion" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Articulos_Idiomas" Association="Self.FK_Articulos_Idiomas">
+            <End Role="Idiomas" EntitySet="Idiomas" />
+            <End Role="Articulos" EntitySet="Articulos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Articulos_Tipo_de_artículo" Association="Self.FK_Articulos_Tipo_de_artículo">
+            <End Role="Tipo_de_artículo" EntitySet="Tipo_de_artículo" />
+            <End Role="Articulos" EntitySet="Articulos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Elenco_articulo_Articulos" Association="Self.FK_Elenco_articulo_Articulos">
+            <End Role="Articulos" EntitySet="Articulos" />
+            <End Role="Elenco_articulo" EntitySet="Elenco_articulo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Elenco_articulo_Elenco" Association="Self.FK_Elenco_articulo_Elenco">
+            <End Role="Elenco" EntitySet="Elenco" />
+            <End Role="Elenco_articulo" EntitySet="Elenco_articulo" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="VideoClub_dbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Cliente">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Nombre" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Cedula" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Num_tarjeta_CR" Type="Int32" />
+          <Property Name="Limite_de_credito" Type="Double" />
+          <Property Name="Tipo_persona" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Estado" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Renta_Devolucion" Relationship="Self.FK__Renta_Dev__Clien__45F365D3" FromRole="Clientes" ToRole="Renta_Devolucion" />
+        </EntityType>
+        <EntityType Name="Empleado">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Nombre" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Cedula" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Tanda_labor" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="Porciento_comision" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Fecha_ingreso" Type="DateTime" Precision="3" />
+          <Property Name="Estado" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Renta_Devolucion" Relationship="Self.FK__Renta_Dev__Estad__440B1D61" FromRole="Empleados" ToRole="Renta_Devolucion" />
+        </EntityType>
+        <EntityType Name="Genero">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Renta_Devolucion">
+          <Key>
+            <PropertyRef Name="Num_de_renta" />
+          </Key>
+          <Property Name="Num_de_renta" Type="Int32" Nullable="false" />
+          <Property Name="Empleado" Type="Int32" />
+          <Property Name="Articulo" Type="Int32" />
+          <Property Name="Cliente" Type="Int32" />
+          <Property Name="Fecha_renta" Type="DateTime" Precision="3" />
+          <Property Name="Fecha_devolucion" Type="DateTime" Precision="3" />
+          <Property Name="Renta_por_dia" Type="Double" />
+          <Property Name="Dias_de_renta" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="Comentario" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Cliente1" Relationship="Self.FK__Renta_Dev__Clien__45F365D3" FromRole="Renta_Devolucion" ToRole="Clientes" />
+          <NavigationProperty Name="Empleado1" Relationship="Self.FK__Renta_Dev__Estad__440B1D61" FromRole="Renta_Devolucion" ToRole="Empleados" />
+          <NavigationProperty Name="Articulo1" Relationship="VideoClub_dbModel.FK__Renta_Dev__Artic__44FF419A" FromRole="Renta_Devolucion" ToRole="Articulo" />
+        </EntityType>
+        <Association Name="FK__Renta_Dev__Clien__45F365D3">
+          <End Role="Clientes" Type="Self.Cliente" Multiplicity="0..1" />
+          <End Role="Renta_Devolucion" Type="Self.Renta_Devolucion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clientes">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Renta_Devolucion">
+              <PropertyRef Name="Cliente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Renta_Dev__Estad__440B1D61">
+          <End Role="Empleados" Type="Self.Empleado" Multiplicity="0..1" />
+          <End Role="Renta_Devolucion" Type="Self.Renta_Devolucion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Empleados">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Renta_Devolucion">
+              <PropertyRef Name="Empleado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="VideoClub_dbEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Clientes" EntityType="Self.Cliente" />
+          <EntitySet Name="Empleados" EntityType="Self.Empleado" />
+          <EntitySet Name="Generos" EntityType="Self.Genero" />
+          <EntitySet Name="Renta_Devolucion" EntityType="Self.Renta_Devolucion" />
+          <AssociationSet Name="FK__Renta_Dev__Clien__45F365D3" Association="Self.FK__Renta_Dev__Clien__45F365D3">
+            <End Role="Clientes" EntitySet="Clientes" />
+            <End Role="Renta_Devolucion" EntitySet="Renta_Devolucion" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Renta_Dev__Estad__440B1D61" Association="Self.FK__Renta_Dev__Estad__440B1D61">
+            <End Role="Empleados" EntitySet="Empleados" />
+            <End Role="Renta_Devolucion" EntitySet="Renta_Devolucion" />
+          </AssociationSet>
+          <EntitySet Name="sysdiagrams" EntityType="VideoClub_dbModel.sysdiagram" />
+          <EntitySet Name="Tipo_de_artículo" EntityType="VideoClub_dbModel.Tipo_de_artículo" />
+          <EntitySet Name="Idiomas" EntityType="VideoClub_dbModel.Idioma" />
+          <EntitySet Name="Articulos" EntityType="VideoClub_dbModel.Articulo" />
+          <EntitySet Name="Elencoes" EntityType="VideoClub_dbModel.Elenco" />
+          <EntitySet Name="Elenco_articulo" EntityType="VideoClub_dbModel.Elenco_articulo" />
+          <AssociationSet Name="FK__Renta_Dev__Artic__44FF419A" Association="VideoClub_dbModel.FK__Renta_Dev__Artic__44FF419A">
+            <End Role="Articulo" EntitySet="Articulos" />
+            <End Role="Renta_Devolucion" EntitySet="Renta_Devolucion" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Articulos_Idiomas" Association="VideoClub_dbModel.FK_Articulos_Idiomas">
+            <End Role="Idioma" EntitySet="Idiomas" />
+            <End Role="Articulo" EntitySet="Articulos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Articulos_Tipo_de_artículo" Association="VideoClub_dbModel.FK_Articulos_Tipo_de_artículo">
+            <End Role="Tipo_de_artículo" EntitySet="Tipo_de_artículo" />
+            <End Role="Articulo" EntitySet="Articulos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Elenco_articulo_Articulos" Association="VideoClub_dbModel.FK_Elenco_articulo_Articulos">
+            <End Role="Articulo" EntitySet="Articulos" />
+            <End Role="Elenco_articulo" EntitySet="Elenco_articulo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Elenco_articulo_Elenco" Association="VideoClub_dbModel.FK_Elenco_articulo_Elenco">
+            <End Role="Elenco" EntitySet="Elencoes" />
+            <End Role="Elenco_articulo" EntitySet="Elenco_articulo" />
+          </AssociationSet>
+          </EntityContainer>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Tipo_de_artículo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Articulos" Relationship="VideoClub_dbModel.FK_Articulos_Tipo_de_artículo" FromRole="Tipo_de_artículo" ToRole="Articulo" />
+        </EntityType>
+        <EntityType Name="Idioma">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Articulos" Relationship="VideoClub_dbModel.FK_Articulos_Idiomas" FromRole="Idioma" ToRole="Articulo" />
+        </EntityType>
+        <EntityType Name="Articulo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Titulo" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Tipo_de_articulo_ID" Type="Int32" />
+          <Property Name="Idioma_ID" Type="Int32" />
+          <Property Name="Renta_por_dia" Type="Double" />
+          <Property Name="Dias_de_renta" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="Monto_entrega_tardia" Type="Double" />
+          <Property Name="Estado" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Renta_Devolucion" Relationship="VideoClub_dbModel.FK__Renta_Dev__Artic__44FF419A" FromRole="Articulo" ToRole="Renta_Devolucion" />
+          <NavigationProperty Name="Idioma" Relationship="VideoClub_dbModel.FK_Articulos_Idiomas" FromRole="Articulo" ToRole="Idioma" />
+          <NavigationProperty Name="Tipo_de_artículo" Relationship="VideoClub_dbModel.FK_Articulos_Tipo_de_artículo" FromRole="Articulo" ToRole="Tipo_de_artículo" />
+          <NavigationProperty Name="Elenco_articulo" Relationship="VideoClub_dbModel.FK_Elenco_articulo_Articulos" FromRole="Articulo" ToRole="Elenco_articulo" />
+        </EntityType>
+        <EntityType Name="Elenco">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Elenco_articulo" Relationship="VideoClub_dbModel.FK_Elenco_articulo_Elenco" FromRole="Elenco" ToRole="Elenco_articulo" />
+        </EntityType>
+        <EntityType Name="Elenco_articulo">
+          <Key>
+            <PropertyRef Name="Articulo" />
+          </Key>
+          <Property Name="Articulo" Type="Int32" Nullable="false" />
+          <Property Name="Elenco" Type="Int32" />
+          <Property Name="Rol" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Articulo1" Relationship="VideoClub_dbModel.FK_Elenco_articulo_Articulos" FromRole="Elenco_articulo" ToRole="Articulo" />
+          <NavigationProperty Name="Elenco1" Relationship="VideoClub_dbModel.FK_Elenco_articulo_Elenco" FromRole="Elenco_articulo" ToRole="Elenco" />
+        </EntityType>
+        <Association Name="FK__Renta_Dev__Artic__44FF419A">
+          <End Type="VideoClub_dbModel.Articulo" Role="Articulo" Multiplicity="0..1" />
+          <End Type="VideoClub_dbModel.Renta_Devolucion" Role="Renta_Devolucion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Articulo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Renta_Devolucion">
+              <PropertyRef Name="Articulo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Articulos_Idiomas">
+          <End Type="VideoClub_dbModel.Idioma" Role="Idioma" Multiplicity="0..1" />
+          <End Type="VideoClub_dbModel.Articulo" Role="Articulo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Idioma">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Articulo">
+              <PropertyRef Name="Idioma_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Articulos_Tipo_de_artículo">
+          <End Type="VideoClub_dbModel.Tipo_de_artículo" Role="Tipo_de_artículo" Multiplicity="0..1" />
+          <End Type="VideoClub_dbModel.Articulo" Role="Articulo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tipo_de_artículo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Articulo">
+              <PropertyRef Name="Tipo_de_articulo_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Elenco_articulo_Articulos">
+          <End Type="VideoClub_dbModel.Articulo" Role="Articulo" Multiplicity="1" />
+          <End Type="VideoClub_dbModel.Elenco_articulo" Role="Elenco_articulo" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Articulo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Elenco_articulo">
+              <PropertyRef Name="Articulo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Elenco_articulo_Elenco">
+          <End Type="VideoClub_dbModel.Elenco" Role="Elenco" Multiplicity="0..1" />
+          <End Type="VideoClub_dbModel.Elenco_articulo" Role="Elenco_articulo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Elenco">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Elenco_articulo">
+              <PropertyRef Name="Elenco" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="VideoClub_dbModelStoreContainer" CdmEntityContainer="VideoClub_dbEntities">
+          <EntitySetMapping Name="Clientes">
+            <EntityTypeMapping TypeName="VideoClub_dbModel.Cliente">
+              <MappingFragment StoreEntitySet="Clientes">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Cedula" ColumnName="Cedula" />
+                <ScalarProperty Name="Num_tarjeta_CR" ColumnName="Num_tarjeta_CR" />
+                <ScalarProperty Name="Limite_de_credito" ColumnName="Limite_de_credito" />
+                <ScalarProperty Name="Tipo_persona" ColumnName="Tipo_persona" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Empleados">
+            <EntityTypeMapping TypeName="VideoClub_dbModel.Empleado">
+              <MappingFragment StoreEntitySet="Empleados">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Cedula" ColumnName="Cedula" />
+                <ScalarProperty Name="Tanda_labor" ColumnName="Tanda_labor" />
+                <ScalarProperty Name="Porciento_comision" ColumnName="Porciento_comision" />
+                <ScalarProperty Name="Fecha_ingreso" ColumnName="Fecha_ingreso" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Generos">
+            <EntityTypeMapping TypeName="VideoClub_dbModel.Genero">
+              <MappingFragment StoreEntitySet="Generos">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Renta_Devolucion">
+            <EntityTypeMapping TypeName="VideoClub_dbModel.Renta_Devolucion">
+              <MappingFragment StoreEntitySet="Renta_Devolucion">
+                <ScalarProperty Name="Num_de_renta" ColumnName="Num_de_renta" />
+                <ScalarProperty Name="Empleado" ColumnName="Empleado" />
+                <ScalarProperty Name="Articulo" ColumnName="Articulo" />
+                <ScalarProperty Name="Cliente" ColumnName="Cliente" />
+                <ScalarProperty Name="Fecha_renta" ColumnName="Fecha_renta" />
+                <ScalarProperty Name="Fecha_devolucion" ColumnName="Fecha_devolucion" />
+                <ScalarProperty Name="Renta_por_dia" ColumnName="Renta_por_dia" />
+                <ScalarProperty Name="Dias_de_renta" ColumnName="Dias_de_renta" />
+                <ScalarProperty Name="Comentario" ColumnName="Comentario" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="VideoClub_dbModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="definition" ColumnName="definition" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tipo_de_artículo">
+            <EntityTypeMapping TypeName="VideoClub_dbModel.Tipo_de_artículo">
+              <MappingFragment StoreEntitySet="Tipo_de_artículo">
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Idiomas">
+            <EntityTypeMapping TypeName="VideoClub_dbModel.Idioma">
+              <MappingFragment StoreEntitySet="Idiomas">
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Articulos">
+            <EntityTypeMapping TypeName="VideoClub_dbModel.Articulo">
+              <MappingFragment StoreEntitySet="Articulos">
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="Monto_entrega_tardia" ColumnName="Monto_entrega_tardia" />
+                <ScalarProperty Name="Dias_de_renta" ColumnName="Dias_de_renta" />
+                <ScalarProperty Name="Renta_por_dia" ColumnName="Renta_por_dia" />
+                <ScalarProperty Name="Idioma_ID" ColumnName="Idioma_ID" />
+                <ScalarProperty Name="Tipo_de_articulo_ID" ColumnName="Tipo_de_articulo_ID" />
+                <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Elencoes">
+            <EntityTypeMapping TypeName="VideoClub_dbModel.Elenco">
+              <MappingFragment StoreEntitySet="Elenco">
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Elenco_articulo">
+            <EntityTypeMapping TypeName="VideoClub_dbModel.Elenco_articulo">
+              <MappingFragment StoreEntitySet="Elenco_articulo">
+                <ScalarProperty Name="Rol" ColumnName="Rol" />
+                <ScalarProperty Name="Elenco" ColumnName="Elenco" />
+                <ScalarProperty Name="Articulo" ColumnName="Articulo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

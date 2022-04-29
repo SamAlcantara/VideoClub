@@ -1,0 +1,90 @@
+﻿@model ProgII_VideoClub.Models.Renta_Devolucion
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Renta_Devolucion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha_renta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha_renta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha_devolucion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha_devolucion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Renta_por_dia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Renta_por_dia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dias_de_renta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dias_de_renta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Comentario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comentario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cliente1.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cliente1.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Empleado1.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Empleado1.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Articulo1.Titulo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Articulo1.Titulo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Num_de_renta }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

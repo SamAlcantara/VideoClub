@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="bac48030a23c49c0be9ae540307a3149" Name="Diagram1">
+        <EntityTypeShape EntityType="VideoClub_dbModel.Cliente" Width="1.5" PointX="0.75" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="VideoClub_dbModel.Empleado" Width="1.5" PointX="0.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="VideoClub_dbModel.Genero" Width="1.5" PointX="2.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VideoClub_dbModel.Renta_Devolucion" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="VideoClub_dbModel.FK__Renta_Dev__Clien__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="VideoClub_dbModel.FK__Renta_Dev__Estad__440B1D61" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="VideoClub_dbModel.sysdiagram" Width="1.5" PointX="7.375" PointY="6.75" />
+        <EntityTypeShape EntityType="VideoClub_dbModel.Tipo_de_artículo" Width="1.5" PointX="8.25" PointY="4.375" />
+        <EntityTypeShape EntityType="VideoClub_dbModel.Idioma" Width="1.5" PointX="5.375" PointY="4.625" />
+        <EntityTypeShape EntityType="VideoClub_dbModel.Articulo" Width="1.5" PointX="10.5" PointY="4" />
+        <EntityTypeShape EntityType="VideoClub_dbModel.Elenco" Width="1.5" PointX="10.5" PointY="0.75" />
+        <EntityTypeShape EntityType="VideoClub_dbModel.Elenco_articulo" Width="1.5" PointX="12.75" PointY="4.625" />
+        <AssociationConnector Association="VideoClub_dbModel.FK__Renta_Dev__Artic__44FF419A" />
+        <AssociationConnector Association="VideoClub_dbModel.FK_Articulos_Idiomas" />
+        <AssociationConnector Association="VideoClub_dbModel.FK_Articulos_Tipo_de_artículo" />
+        <AssociationConnector Association="VideoClub_dbModel.FK_Elenco_articulo_Articulos" />
+        <AssociationConnector Association="VideoClub_dbModel.FK_Elenco_articulo_Elenco" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
