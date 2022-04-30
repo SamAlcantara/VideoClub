@@ -37,17 +37,17 @@ _Estructuras de carpetas_
 
 
 
-## Inicio 📕
+### Inicio 📕
 
 ![menu](https://user-images.githubusercontent.com/98991500/166076877-6b61a9cd-c9aa-41ef-94ed-55d477355bb0.jpg)
 
-## Gestión de articulos 💿
+### Gestión de articulos 💿
 
 ![Lista](https://user-images.githubusercontent.com/98991500/166077782-11cb0eb8-1b2a-4452-8489-dc52a316f82b.jpg)
 
 ![create](https://user-images.githubusercontent.com/98991500/166077808-a2460985-16e9-4758-97ea-c83df9fc23a4.jpg)
 
-## Gestión de clientes 👥
+### Gestión de clientes 👥
 
 ![gclie](https://user-images.githubusercontent.com/98991500/166079205-0b89aa25-99fa-48fd-b196-dfa1fedee9a2.jpg)
 
@@ -59,19 +59,19 @@ _Estructuras de carpetas_
 
 ![crearelenco](https://user-images.githubusercontent.com/98991500/166079311-ab14c172-3c40-44de-a47c-be4af71d7331.jpg)
 
-### Gestión de elenco - artículo 🎬💿
+ Gestión de elenco - artículo 🎬💿
 
 ![geleart](https://user-images.githubusercontent.com/98991500/166079786-b20ae95f-d1e7-4c04-b028-6b82200e9735.jpg)
 
 ![elenco2222222](https://user-images.githubusercontent.com/98991500/166081157-996a5024-b81c-4df4-beb6-4e197b391e68.jpg)
 
-## Gestión empleados 🧑‍💼
+ Gestión empleados 🧑‍💼
 
 ![empleadps](https://user-images.githubusercontent.com/98991500/166081173-31837f01-9358-403e-9259-55d9332cb2fa.jpg)
 
 ![empleados2](https://user-images.githubusercontent.com/98991500/166081179-8d2f5d56-65fd-4c54-896d-ced72cab9797.jpg)
 
-## Gestión de generos 🎭
+Gestión de generos 🎭
 
 ![generos](https://user-images.githubusercontent.com/98991500/166081187-7e35636b-bd5f-4bd3-964a-33b2d9d960dc.jpg)
 
