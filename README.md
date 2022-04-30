@@ -37,7 +37,7 @@ _Estructuras de carpetas_
 
 
 
-### Inicio 📕
+### Inicio 🎞
 
 ![menu](https://user-images.githubusercontent.com/98991500/166076877-6b61a9cd-c9aa-41ef-94ed-55d477355bb0.jpg)
 
@@ -100,8 +100,8 @@ _Estructuras de carpetas_
 _Menciona las herramientas que utilizaste para crear tu proyecto_
 
 * [Visual Studio](https://es.wikipedia.org/wiki/Microsoft_Visual_Studio(software)) - EL IDE usado
-* [ASP.NET](https://www.java.com/es/download/ie_manual.jsp) - Tecnologia usada
-* [SQLSERVER](https://www.mysql.com/) - Gestor de base de datos usado
+* [ASP.NET](https://dotnet.microsoft.com/en-us/apps/aspnet) - Tecnología usada
+* [SQL Server](https://es.wikipedia.org/wiki/Microsoft_SQL_Server) - Gestor de base de datos usado
 
 ## Autores ✒️
 
