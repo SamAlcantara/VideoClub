@@ -37,7 +37,7 @@ _Estructuras de carpetas_
 
 
 
-### Inicio 📚
+### Inicio 📕
 
 ![menu](https://user-images.githubusercontent.com/98991500/166076877-6b61a9cd-c9aa-41ef-94ed-55d477355bb0.jpg)
 
