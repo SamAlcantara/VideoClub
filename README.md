@@ -126,7 +126,6 @@ _Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios
 
 ## Expresiones de Gratitud 🎁
 
-* De parte de todo el equipo, le damos las gracias por ver 🤓.
-* 
+* Gracias a todo el equipo por hacer este sistema posible 🤓.
 
 ---
