@@ -100,7 +100,7 @@ _Estructuras de carpetas_
 _Menciona las herramientas que utilizaste para crear tu proyecto_
 
 * [Visual Studio](https://es.wikipedia.org/wiki/Microsoft_Visual_Studio(software)) - EL IDE usado
-* [ASP.NET](https://dotnet.microsoft.com/en-us/apps/aspnet) - Tecnología usada
+* [ASP.NET](https://dotnet.microsoft.com/en-us/apps/aspnet) - El framework usado
 * [SQL Server](https://es.wikipedia.org/wiki/Microsoft_SQL_Server) - Gestor de base de datos usado
 
 ## Autores ✒️
