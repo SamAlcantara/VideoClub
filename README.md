@@ -111,7 +111,7 @@ _Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios
 
 * **Matricula** - *2020-10624*
 
-* **Alexis Francisco Amézquita Almonte** - [Alexis](https://github.com/Alexisfco10o)
+* **Alexis Francisco Amézquita Almonte** - [Alexis](https://github.com/Alexisfco10)
 
 * **Matricula** - *2020-10432*
 
