@@ -124,8 +124,3 @@ _Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios
 
 * **Matricula** - *2020-10283*
 
-## Expresiones de Gratitud 🎁
-
-* Gracias a todo el equipo por hacer este sistema posible 🤓.
-
----
