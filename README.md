@@ -41,7 +41,7 @@ _Estructuras de carpetas_
 
 ![menu](https://user-images.githubusercontent.com/98991500/166076877-6b61a9cd-c9aa-41ef-94ed-55d477355bb0.jpg)
 
-### Gestión de articulos 💿
+### Gestión de artículos 💿
 
 ![Lista](https://user-images.githubusercontent.com/98991500/166077782-11cb0eb8-1b2a-4452-8489-dc52a316f82b.jpg)
 
@@ -83,7 +83,7 @@ _Estructuras de carpetas_
 
 ![idiomas2](https://user-images.githubusercontent.com/98991500/166081226-c9298c7b-c349-46b6-a4ce-88439100a14d.jpg)
 
-### Gestión de Renta 💸
+### Gestión de Renta y Devolución 💸
 
 ![renta](https://user-images.githubusercontent.com/98991500/166081292-829f2b53-b544-4e71-ae9d-2c46e756cc8a.jpg)
 
