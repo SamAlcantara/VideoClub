@@ -108,7 +108,6 @@ _Menciona las herramientas que utilizaste para crear tu proyecto_
 _Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
 
 * **Marcos José Morillo Suarez** -  [Marcos](https://github.com/Marc-Morillo)
-* **Marcos José Morillo Suarez** -  [Marcos](https://github.com/Marc-Morillo)
 
 * **Matricula** - *2020-10624*
 
