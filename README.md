@@ -35,29 +35,29 @@ _Estructuras de carpetas_
 
 ## Ejecutando las pruebas ⚙️
 
-### Inicio 📕
+## Inicio 📕
 
 ![menu](https://user-images.githubusercontent.com/98991500/166076877-6b61a9cd-c9aa-41ef-94ed-55d477355bb0.jpg)
 
-### Gestión de articulos 💿
+## Gestión de articulos 💿
 
 ![Lista](https://user-images.githubusercontent.com/98991500/166077782-11cb0eb8-1b2a-4452-8489-dc52a316f82b.jpg)
 
 ![create](https://user-images.githubusercontent.com/98991500/166077808-a2460985-16e9-4758-97ea-c83df9fc23a4.jpg)
 
-### Gestión de clientes 👥
+## Gestión de clientes 👥
 
 ![gclie](https://user-images.githubusercontent.com/98991500/166079205-0b89aa25-99fa-48fd-b196-dfa1fedee9a2.jpg)
 
 ![Captura de pantalla 2022-04-29 194827](https://user-images.githubusercontent.com/98991500/166081517-bfc42d3d-cd63-4dc3-bfe6-c2d399d0d6ce.jpg)
 
-### Gestión de elenco 👤
+### Gestión de elenco 🎬
 
 ![gele](https://user-images.githubusercontent.com/98991500/166079292-b3595132-317e-4992-b2bf-77f554b185fe.jpg)
 
 ![crearelenco](https://user-images.githubusercontent.com/98991500/166079311-ab14c172-3c40-44de-a47c-be4af71d7331.jpg)
 
-### Gestión de elenco - artículo 👥
+### Gestión de elenco - artículo 🎬💿
 
 ![geleart](https://user-images.githubusercontent.com/98991500/166079786-b20ae95f-d1e7-4c04-b028-6b82200e9735.jpg)
 
