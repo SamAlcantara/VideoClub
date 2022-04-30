@@ -25,7 +25,7 @@ _- Un Reporte de rentas: entre fechas, por tipo de articulo, etc._
 _- Desarrollado en la tecnología de su preferencia._
 
 ## Construccion 🎥⚒
-_Estructura de la base de datos (SQLSERVER)_
+_Estructura de la base de datos (SQL Server)_
 
 ![db](https://user-images.githubusercontent.com/98991500/166076333-6f983ddf-e1a6-406e-a3fb-196f6c689e97.jpg)
 
@@ -37,7 +37,7 @@ _Estructuras de carpetas_
 
 
 
-### Inicio 🎞
+### Inicio 📚
 
 ![menu](https://user-images.githubusercontent.com/98991500/166076877-6b61a9cd-c9aa-41ef-94ed-55d477355bb0.jpg)
 
@@ -59,7 +59,7 @@ _Estructuras de carpetas_
 
 ![crearelenco](https://user-images.githubusercontent.com/98991500/166079311-ab14c172-3c40-44de-a47c-be4af71d7331.jpg)
 
- Gestión de elenco - artículo 🎬💿
+### Gestión de elenco - artículo 🎬💿
 
 ![geleart](https://user-images.githubusercontent.com/98991500/166079786-b20ae95f-d1e7-4c04-b028-6b82200e9735.jpg)
 
