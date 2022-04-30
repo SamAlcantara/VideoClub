@@ -89,7 +89,7 @@ _Estructuras de carpetas_
 
 ![rentaa](https://user-images.githubusercontent.com/98991500/166081297-37f5d93c-d292-4033-93b7-a61cbabe3497.jpg)
 
-### Gestión de tipo - articulos 📹
+### Gestión de tipo - artículos 📹
 
 ![gestion 1](https://user-images.githubusercontent.com/98991500/166081334-1c5e8c71-d92f-4642-b4d1-4beb131c9ad1.jpg)
 
