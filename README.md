@@ -35,6 +35,8 @@ _Estructuras de carpetas_
 
 ## Ejecutando las pruebas ⚙️
 
+
+
 ## Inicio 📕
 
 ![menu](https://user-images.githubusercontent.com/98991500/166076877-6b61a9cd-c9aa-41ef-94ed-55d477355bb0.jpg)
@@ -63,31 +65,31 @@ _Estructuras de carpetas_
 
 ![elenco2222222](https://user-images.githubusercontent.com/98991500/166081157-996a5024-b81c-4df4-beb6-4e197b391e68.jpg)
 
-### Gestión empleados 🧑‍💼
+## Gestión empleados 🧑‍💼
 
 ![empleadps](https://user-images.githubusercontent.com/98991500/166081173-31837f01-9358-403e-9259-55d9332cb2fa.jpg)
 
 ![empleados2](https://user-images.githubusercontent.com/98991500/166081179-8d2f5d56-65fd-4c54-896d-ced72cab9797.jpg)
 
-### Gestión de generos 🎭
+## Gestión de generos 🎭
 
 ![generos](https://user-images.githubusercontent.com/98991500/166081187-7e35636b-bd5f-4bd3-964a-33b2d9d960dc.jpg)
 
 ![generos2](https://user-images.githubusercontent.com/98991500/166081201-ea415225-1fc2-4e95-81ca-f955c44e9149.jpg)
 
-### Gestión de idomas 🌐
+## Gestión de idomas 🌐
 
 ![idiomas](https://user-images.githubusercontent.com/98991500/166081217-3d4eb40a-761d-4501-9cec-a77457bd4494.jpg)
 
 ![idiomas2](https://user-images.githubusercontent.com/98991500/166081226-c9298c7b-c349-46b6-a4ce-88439100a14d.jpg)
 
-### Gestión de Renta 💸
+## Gestión de Renta 💸
 
 ![renta](https://user-images.githubusercontent.com/98991500/166081292-829f2b53-b544-4e71-ae9d-2c46e756cc8a.jpg)
 
 ![rentaa](https://user-images.githubusercontent.com/98991500/166081297-37f5d93c-d292-4033-93b7-a61cbabe3497.jpg)
 
-### Gestión de tipo - articulos 📹
+## Gestión de tipo - articulos 📹
 
 ![gestion 1](https://user-images.githubusercontent.com/98991500/166081334-1c5e8c71-d92f-4642-b4d1-4beb131c9ad1.jpg)
 
